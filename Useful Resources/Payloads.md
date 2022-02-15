@@ -1,5 +1,6 @@
 # Quick commands to work with
 ### Will update as I refine and play around with it, Do explore other commands, some maybe faster and easier than the ones below
+### By no way this is a silver bullet, Lot of payloads have not been added, these are just a few, please refer the links and explore more. Do not copy-paste you will  not learn anthing.
 ---
 ### Disable Defender and firewall
 ```
