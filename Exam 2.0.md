@@ -5,7 +5,7 @@
 ---
 ## Prep after first fail.
 - Only one prep, went through google to learn more about the path I got stuck, got some lead, time to test in exam. It worked.
-- Really nothing else, no labs, not extension, no blogs.
+- Really nothing else, no labs, no extension, no blogs.
 ---
 ## The Exam 
 - Exam was a breeze, got the minimum required flags well under time, had lots of time to go through various methods and test my hypothesis.

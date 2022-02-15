@@ -47,14 +47,14 @@ Worth the time spent here. Has C# and Powershell payloads described in here,
 As the Topic says, AV evasion.
 This topic is where you have to focus a lot, as the labs have defender and AV over it. Specially AMSI bypass as your gonna need it almost every time you try to get a code exec. Couple of straight methods described in PDF, Your free to use yours (I recommend to keep backup scripts). Since the course has been out, Students have been successful in submitting samples to the AV vendors, which leads to detection of our payload, To not worry/panic during lab/exam please prepare your own script, even a slight modification in Dropper code is sometimes enough to bypass some AV, so obfuscation is really important. It shows the payload generation for Macros, C#, and Powershell. So this is one of the important topic.
 
-On  Day, 11 I start my Lab 1: Took a couple of days to actually understand, as I was stuck on it with the OSCP mindset to get a foothold => user shell => priv shell. But that is not the aim in here. Our target is DC,  so focus more on pivot and AD. To try and test your code, you are provided with a test Win 10 VM, but i would recommend having your own VM for testing. **NOTE**
-`Please Disable Windows Defender and any other AV if you have installed in your Host while testing . If your using a shared directory on you host windows, Please make sure you add the shared directory on whitelist or ignore list and disable sample submission in your Defender. I would recommend disable NAT/Bridged mode network to test VM preventing it from accessing the internet.`
+On  Day 11, I start my Lab 1: Took a couple of days to actually understand, as I was stuck on it with the OSCP mindset to get a foothold => user shell => priv shell. But that is not the aim in here. Our target is DC,  so focus more on pivot and AD. To try and test your code, you are provided with a test Win 10 VM, but i would recommend having your own VM for testing. **NOTE**
+`Please Disable Windows Defender and any other AV if you have installed in your Host while testing . If your using a shared directory on you host windows, Please make sure you add the shared directory on whitelist or ignore list and disable sample submission in your Defender. I would recommend disable NAT/Bridged mode network to test VM, preventing it from accessing the internet.`
 I had to refer to Application Whitelisting as we are gonna use AMSI bypass together with CLM bypass, so get a good payload ready for your exam.
 
 ---
 ## Day 15 and Day 16
 ---
-Still stuck on lab 1. Trying to understand pivot paths, Basic Active Directory introduction in here. There will be occasional jumps between topics like AV bypass, AD, Process injection, etc. So it was good run between multiple topics. The focus in here is about trying to reach AD as fast as possible. Check if you can priv esc quickly, else find path, creds or any info from AD enum to pivot into next IP. 
+Still stuck on lab 1. Trying to understand pivot paths, Basic Active Directory introduction in here. There will be occasional jumps between topics like AV bypass, AD, Process injection, etc. So it was good run between multiple topics. The focus in here is about trying to reach DC as soon as possible. Check if you can priv esc quickly, else find path, creds or any info from AD enum to pivot into next IP. 
 **Focus on Movement**
 PowerView, BloodHound and Metasploit are your best friends in the lab. Get a hang of them.
 Lab 2 was a breeze, PDF is more than enough for you guys, couple of hours your done.
@@ -127,7 +127,7 @@ Nothing works according to plan.
 
 Mistakes:
 - No breaks.
-- Dint Focus on my having food at right time.
+- Dint Focus on  having my food at right time.
 - Panicked.
 - Lack of sleep.
 
