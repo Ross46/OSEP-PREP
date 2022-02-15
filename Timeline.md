@@ -28,7 +28,7 @@ The flow was similar to that of the macros,
 Dropper => Staged Payload => In Memory execution using powershell, c# payload.
 Introduction to DotNetToJscript and SharpShooter, although most AV detect the payload now, u can still play around it.
 .js file is by default executed by windows, so we don't have to worry about explicitly calling it through an app.
-[Default](/images/Default.png)
+![](/images/Default.png?raw=true)
 
 ---
 
